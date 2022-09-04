@@ -1,12 +1,15 @@
+allowedPercentage = tuple()
+
+
 voedingshoeveelheid = int(input("Voedingshoeveelheid / 1L in ml (op verpakking)"))
 birchPercentage = int(input("ingesteld percentage op birchmaer: "))
 gewensteLtoetedienen = int(input("Gewenste hoeveelheid toe te dienen in L:"))
 
 AanlenghoeveelheidInBirchL = voedingshoeveelheid * birchPercentage
-VoedingInBirchPerL =voedingshoeveelheid / birchPercentage
+VoedingInBirchPerL = voedingshoeveelheid / birchPercentage
 totaalVoedingInBirch = gewensteLtoetedienen * VoedingInBirchPerL
 totaalAanlengInBirch = gewensteLtoetedienen * AanlenghoeveelheidInBirchL
-totaalInBirch = totaalAanlengInBirch + totaalAanlengInBirch
+totaalInBirch = totaalAanlengInBirch + totaalVoedingInBirch
 
 
 print ("Voeding verhouding in birchmaer : ",VoedingInBirchPerL,"ml/l")
